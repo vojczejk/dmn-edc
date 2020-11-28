@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:IRLZ34N F1
+U 1 1 5FC18E93
+P 5650 2100
+F 0 "F1" H 5855 2146 50  0000 L CNN
+F 1 "IRLZ24N" H 5855 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5900 2025 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720" H 5650 2100 50  0001 L CNN
+	1    5650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC1913E
+P 5750 2400
+F 0 "#PWR?" H 5750 2150 50  0001 C CNN
+F 1 "GND" H 5755 2227 50  0000 C CNN
+F 2 "" H 5750 2400 50  0001 C CNN
+F 3 "" H 5750 2400 50  0001 C CNN
+	1    5750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2400 5750 2300
+$Comp
+L Device:R R1
+U 1 1 5FC192B1
+P 5250 2100
+F 0 "R1" V 5043 2100 50  0000 C CNN
+F 1 "1k" V 5134 2100 50  0000 C CNN
+F 2 "" V 5180 2100 50  0001 C CNN
+F 3 "~" H 5250 2100 50  0001 C CNN
+	1    5250 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FC1938D
+P 4950 2250
+F 0 "R2" H 5020 2296 50  0000 L CNN
+F 1 "10K" H 5020 2205 50  0000 L CNN
+F 2 "" V 4880 2250 50  0001 C CNN
+F 3 "~" H 4950 2250 50  0001 C CNN
+	1    4950 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2100 5100 2100
+Wire Wire Line
+	5400 2100 5450 2100
+Wire Wire Line
+	4950 2400 5750 2400
+Connection ~ 5750 2400
+Wire Wire Line
+	5750 1900 5750 1850
+Wire Wire Line
+	4950 2100 4400 2100
+Connection ~ 4950 2100
+Text HLabel 4400 2100 0    50   Input ~ 0
+IN1
+Text HLabel 6300 1850 2    50   Output ~ 0
+OUT1
+Wire Wire Line
+	5750 1850 6300 1850
+$Comp
+L Transistor_FET:IRLZ34N F2
+U 1 1 5FC1A66C
+P 5650 2900
+F 0 "F2" H 5855 2946 50  0000 L CNN
+F 1 "IRLZ24N" H 5855 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5900 2825 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720" H 5650 2900 50  0001 L CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC1A673
+P 5750 3200
+F 0 "#PWR?" H 5750 2950 50  0001 C CNN
+F 1 "GND" H 5755 3027 50  0000 C CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3200 5750 3100
+$Comp
+L Device:R R3
+U 1 1 5FC1A67A
+P 5250 2900
+F 0 "R3" V 5043 2900 50  0000 C CNN
+F 1 "1k" V 5134 2900 50  0000 C CNN
+F 2 "" V 5180 2900 50  0001 C CNN
+F 3 "~" H 5250 2900 50  0001 C CNN
+	1    5250 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FC1A681
+P 4950 3050
+F 0 "R4" H 5020 3096 50  0000 L CNN
+F 1 "10K" H 5020 3005 50  0000 L CNN
+F 2 "" V 4880 3050 50  0001 C CNN
+F 3 "~" H 4950 3050 50  0001 C CNN
+	1    4950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2900 5100 2900
+Wire Wire Line
+	5400 2900 5450 2900
+Wire Wire Line
+	4950 3200 5750 3200
+Connection ~ 5750 3200
+Wire Wire Line
+	5750 2700 5750 2650
+Wire Wire Line
+	4950 2900 4400 2900
+Connection ~ 4950 2900
+Text HLabel 4400 2900 0    50   Input ~ 0
+IN2
+Text HLabel 6300 2650 2    50   Output ~ 0
+OUT2
+Wire Wire Line
+	5750 2650 6300 2650
+$Comp
+L Transistor_FET:IRLZ34N F3
+U 1 1 5FC1A80B
+P 5650 3700
+F 0 "F3" H 5855 3746 50  0000 L CNN
+F 1 "IRLZ24N" H 5855 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5900 3625 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720" H 5650 3700 50  0001 L CNN
+	1    5650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC1A812
+P 5750 4000
+F 0 "#PWR?" H 5750 3750 50  0001 C CNN
+F 1 "GND" H 5755 3827 50  0000 C CNN
+F 2 "" H 5750 4000 50  0001 C CNN
+F 3 "" H 5750 4000 50  0001 C CNN
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4000 5750 3900
+$Comp
+L Device:R R5
+U 1 1 5FC1A819
+P 5250 3700
+F 0 "R5" V 5043 3700 50  0000 C CNN
+F 1 "1k" V 5134 3700 50  0000 C CNN
+F 2 "" V 5180 3700 50  0001 C CNN
+F 3 "~" H 5250 3700 50  0001 C CNN
+	1    5250 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FC1A820
+P 4950 3850
+F 0 "R6" H 5020 3896 50  0000 L CNN
+F 1 "10K" H 5020 3805 50  0000 L CNN
+F 2 "" V 4880 3850 50  0001 C CNN
+F 3 "~" H 4950 3850 50  0001 C CNN
+	1    4950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3700 5100 3700
+Wire Wire Line
+	5400 3700 5450 3700
+Wire Wire Line
+	4950 4000 5750 4000
+Connection ~ 5750 4000
+Wire Wire Line
+	5750 3500 5750 3450
+Wire Wire Line
+	4950 3700 4400 3700
+Connection ~ 4950 3700
+Text HLabel 4400 3700 0    50   Input ~ 0
+IN3
+Text HLabel 6300 3450 2    50   Output ~ 0
+OUT3
+Wire Wire Line
+	5750 3450 6300 3450
+$Comp
+L Transistor_FET:IRLZ34N F4
+U 1 1 5FC1AA71
+P 5650 4500
+F 0 "F4" H 5855 4546 50  0000 L CNN
+F 1 "IRLZ24N" H 5855 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5900 4425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720" H 5650 4500 50  0001 L CNN
+	1    5650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC1AA78
+P 5750 4800
+F 0 "#PWR?" H 5750 4550 50  0001 C CNN
+F 1 "GND" H 5755 4627 50  0000 C CNN
+F 2 "" H 5750 4800 50  0001 C CNN
+F 3 "" H 5750 4800 50  0001 C CNN
+	1    5750 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4800 5750 4700
+$Comp
+L Device:R R7
+U 1 1 5FC1AA7F
+P 5250 4500
+F 0 "R7" V 5043 4500 50  0000 C CNN
+F 1 "1k" V 5134 4500 50  0000 C CNN
+F 2 "" V 5180 4500 50  0001 C CNN
+F 3 "~" H 5250 4500 50  0001 C CNN
+	1    5250 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5FC1AA86
+P 4950 4650
+F 0 "R8" H 5020 4696 50  0000 L CNN
+F 1 "10K" H 5020 4605 50  0000 L CNN
+F 2 "" V 4880 4650 50  0001 C CNN
+F 3 "~" H 4950 4650 50  0001 C CNN
+	1    4950 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4500 5100 4500
+Wire Wire Line
+	5400 4500 5450 4500
+Wire Wire Line
+	4950 4800 5750 4800
+Connection ~ 5750 4800
+Wire Wire Line
+	5750 4300 5750 4250
+Wire Wire Line
+	4950 4500 4400 4500
+Connection ~ 4950 4500
+Text HLabel 4400 4500 0    50   Input ~ 0
+IN4
+Text HLabel 6300 4250 2    50   Output ~ 0
+OUT4
+Wire Wire Line
+	5750 4250 6300 4250
+$EndSCHEMATC
